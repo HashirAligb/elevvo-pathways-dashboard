@@ -40,11 +40,11 @@ npm install
 npm start
 The application will run on http://localhost:3000
 Project Structure
-src/
-├── components/     # Reusable UI components
-├── scenes/         # Page-level components  
-├── data/           # Mock data and API calls
-└── theme.js        # Material-UI custom theming
+src
+components/     # Reusable UI components
+scenes/         # Page-level components  
+data/           # Mock data and API calls
+theme.js        # Material-UI custom theming
 Development Highlights
 This project taught me valuable lessons about building professional admin interfaces and making thoughtful technical decisions. I chose Formik over React Hook Form for form management because React Hook Form would have required wrapping each Material-UI TextField in a Controller component, making the forms more verbose. Formik's render props pattern provided cleaner integration with Material-UI's built-in error handling.
 Acknowledgments
