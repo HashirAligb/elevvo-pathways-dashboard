@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+Elevvo Pathways Dashboard
+A comprehensive recruitment management platform built with React and Material-UI, designed to streamline applicant tracking and hiring pipeline management for HR teams.
+Overview
+This dashboard was developed during my software engineering internship at Alevelo Pathways to create an efficient system for managing recruitment workflows. The application provides real-time insights into applicant statuses, company partnerships, and hiring analytics.
+Features
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Applicant Management: Track candidates through the complete hiring pipeline (Applied → Interviewing → Hired/Rejected)
+Company Database: Manage partner companies with industry categorization and open role tracking
+Interactive Analytics: Visual insights including applicant geographic distribution, status breakdowns, and monthly hiring trends
+Form Management: Create new applicant profiles with validation using Formik and Yup
+Data Export: CSV export functionality for reporting and data analysis
+Responsive Design: Fully optimized for desktop and mobile devices
 
-## Available Scripts
+Tech Stack
 
-In the project directory, you can run:
+Frontend: React with Material-UI components
+Forms: Formik with Yup validation
+Charts: Nivo for data visualization
+Calendar: FullCalendar integration
+Styling: Custom Material-UI theming with light mode design
+Layout: Responsive CSS Grid and Flexbox
 
-### `npm start`
+Key Pages
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Dashboard: Overview metrics and quick insights
+Applicants: Comprehensive applicant management with filtering
+Companies: Partner company database with search functionality
+Analytics: Detailed charts and hiring trend analysis
+Forms: New applicant creation with validation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation & Setup
+bash# Clone the repository
+git clone https://github.com/HashirAligb/elevvo-pathways-dashboard.git
 
-### `npm test`
+# Install dependencies
+cd elevvo-pathways-dashboard
+npm install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Start development server
+npm start
+The application will run on http://localhost:3000
+Project Structure
+src/
+├── components/     # Reusable UI components
+├── scenes/         # Page-level components  
+├── data/           # Mock data and API calls
+└── theme.js        # Material-UI custom theming
+Development Highlights
+This project taught me valuable lessons about building professional admin interfaces and making thoughtful technical decisions. I chose Formik over React Hook Form for form management because React Hook Form would have required wrapping each Material-UI TextField in a Controller component, making the forms more verbose. Formik's render props pattern provided cleaner integration with Material-UI's built-in error handling.
+Acknowledgments
+Built upon foundational concepts from Ed Roh's "Complete React Admin Dashboard" tutorial, which provided excellent guidance on Material-UI theming and React dashboard patterns. The final implementation was completely customized for recruitment management workflows.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
+Note: This is a frontend-only application with mock data for demonstration purposes for now. 
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
